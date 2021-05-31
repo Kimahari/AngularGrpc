@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   async click2() {
     const ttt = new HelloRequest();
 
-    ttt.setName('Anular');
+    ttt.setName('Angular');
 
     const data = await this.client
       .post<HelloReply>('https://localhost:5001/api/Hello', ttt)
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
   click() {
     const ttt = new HelloRequest();
 
-    ttt.setName('Anular');
+    ttt.setName('Angular');
 
     this.ccc.sayHello(ttt, (e, serverMessage) => {
       console.info('Server', serverMessage);
