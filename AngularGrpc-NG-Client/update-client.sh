@@ -1,0 +1,1 @@
+protoc --plugin="protoc-gen-ts=C:\Users\1herm\source\repos\AngularGrpc\AngularGrpc-NG-Client\node_modules\.bin\protoc-gen-ts.cmd" --js_out="import_style=commonjs,binary:./src/app/generated" --ts_out="service=grpc-web:./src/app/generated" .\greeter.proto
